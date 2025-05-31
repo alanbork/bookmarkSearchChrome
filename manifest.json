@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Searcher",
+  "version": "1.0",
+  "description": "A Chrome extension to quickly search your bookmarks (alt+b).",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+       "48": "icon.png"
+     }
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+  "commands": {
+   "_execute_action": {
+       "suggested_key": {
+         "default": "Alt+B"
+       },
+       "description": "Open Bookmark Searcher"
+    }
+  }
+}

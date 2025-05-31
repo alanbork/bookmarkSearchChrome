@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    min-width: 300px;
+    max-height: 500px;
+}
+
+#searchBox {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Results List Styling */
+#results {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+    max-height: 450px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#results > li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#results > li:hover {
+    background-color: #f0f0f0;
+}
+
+#results > li.selected {
+    background-color: #ddd;
+}
+
+#results > li > span.title-span {
+     display: inline-block; /* make the title an inline block so it has a defined width */
+    margin-right: 10px; /*  Add margin */
+    max-width: 200px;
+    overflow: hidden;
+ }
+#results > li > span.url-span {
+     color: blue;
+     display: inline-block;
+    overflow: hidden;
+}
